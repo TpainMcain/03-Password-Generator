@@ -49,7 +49,7 @@ function generatePassword() {
         alert("Please try again with a valid value.");
     // Validates if user selected a number 8-128. || = OR.
     } else if (enter < 8 || enter > 128) {
-        enter = parseInt(promt("Please select password length between 8-128 characters."));
+        enter = parseInt(prompt("Please select password length between 8-128 characters."));
     // Prompts continue after user validation
     } else {
         userNumber = confirm("Do you want your password to contain numbers?");
