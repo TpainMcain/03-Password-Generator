@@ -59,7 +59,7 @@ function generatePassword() {
     };
     // Validates if user selected 4 invalid options. && = AND.
     if (!userCharacter && !userNumber && !userUpper && !userLower) {
-        choices = alert("You must select valid criteria!");
+        choices = alert("You must select at least one option! Please try again.");
     }
     // Begin if else statements that use user input. Concat = MERGE ARRAYS.
     // Validates if user selected 4 valid options.
@@ -112,4 +112,24 @@ function generatePassword() {
         choices = blank.concat(alphaUpper);
     };
 
+// Declares password variable. This is an array placeholder for user generated length.
+var password = [];
+
+// For loop that takes user input and randomizes outcome.  
+for (var i = 0; i < enter; i++) {
+    // Outcome is stored in variable pickChoices.
+    var pickChoices = choices[Math.floor(Math.random() * choices.length)];
+    // pickChoices is pushed to variable password.
+    password.push(pickChoices);
 }
+
+// This joins the password array and converts it to a string
+var ps = password.join("");
+UserInput(ps);
+return ps;
+}
+
+// This puts the password outcome into the textbox
+function UserInput(ps) {
+    document.getElementById("password").textContent = ps;
+};
