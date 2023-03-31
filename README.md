@@ -1,16 +1,16 @@
 # Module-03-Challenge
 
-# Description
+## Description
 A password generator utilizing Javascript to create a random password based on user criteria.
 
-# Links
+## Links
 https://tpainmcain.github.io/03-Password-Generator/
 
-# Getting Started
+## Getting Started
 Open index.html with default browser.
 
-# License
+## License
 MIT License
 
-# Acknowledgments
+## Acknowledgments
 https://github.com/jamierachael
