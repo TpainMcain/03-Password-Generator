@@ -11,6 +11,3 @@ Open index.html with default browser.
 
 ## License
 MIT License
-
-## Acknowledgments
-https://github.com/jamierachael
